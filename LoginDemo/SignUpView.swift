@@ -18,17 +18,19 @@ struct SignUpView: View {
                     Text("Registration")
                         .font(.system(size: 23, weight: .medium, design: .rounded))
                     Spacer()
-                }
-                VStack(alignment: .center, spacing: 15) {
-                    Spacer()
-                    TextfieldCustom(titleText: "Enter the username", errorText: "Enter valid username", textfieldValue: $userNameText)
-                    TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
-                    TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
-                    TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
+                    VStack {
+                        TextfieldCustom(titleText: "Enter the username", errorText: "Enter valid username", textfieldValue: $userNameText)
+                        TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
+                        TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
+                        TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
+                    }
                     Button(action: {}, label: {
                         Text("Sign Up")
                     })
-                    Spacer()
+                    .frame(width: 300, height: 50, alignment: .center)
+                    
+                    .background(RoundedRectangle(cornerRadius: 20).fill(Color(.darkGray)))
+                    .padding()
                     Spacer()
                 }
             }
