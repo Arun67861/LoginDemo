@@ -19,7 +19,7 @@ struct SignUpView: View {
                         .font(.system(size: 23, weight: .medium, design: .rounded))
                     Spacer()
                     VStack {
-                        TextfieldCustom(titleText: "Enter the username", errorText: "Enter valid username", textfieldValue: $userNameText)
+                        TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
                         TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
                         TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
                         TextfieldCustom(titleText: "Enter the username", errorText: "", textfieldValue: $userNameText)
